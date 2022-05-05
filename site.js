@@ -346,6 +346,33 @@ gameStart();
 
 }
 
+function resetPuzzle() {
+	document.getElementById("instructions").style.visibility = "visible";
+	document.getElementById("submit").disabled = false;
+	document.getElementById("scoreResults").style.visibility = "hidden";
+	for (let i = 0; i < puzzle.length; i++) {
+		let di = "draggable" + i;
+		document.getElementById(di).style.visibility = "hidden";
+	}
+
+	xs = new Array(puzzle.length + 1); // x coords of letter tiles
+	ys = new Array(puzzle.length + 1); // y coords of letter tiles
+	pw = new Array(Math.ceil(puzzle.length / 2)); //potential words
+	words = new Array(Math.ceil(puzzle.length / 2)); //true words
+	letterTiles = new Array(puzzle.length);
+	snapLeft = $("#snaptarget")[0].offsetLeft; // coord for left side of game box
+	snapTop = $("#snaptarget")[0].offsetTop; // coord for top of game box
+	wordArray = Array.from(Array(puzzle.length), () => new Array(puzzle.length).fill(" "));
+	draggableArray = Array.from(Array(puzzle.length), () => new Array(puzzle.length).fill(""));
+	gameStart();
+
+	for (let i = 0; i < puzzle.length; i++) {
+		let di = "draggable" + i;
+		document.getElementById(di).style.visibility = "visible";
+	}
+
+}
+
 // Ends the current game and starts a new game with a Random puzzle chosen from puzzles.
 function randomPuzzle() {
 	document.getElementById("instructions").style.visibility = "visible";
