@@ -33,7 +33,7 @@
 //$(window).load(function () {
 
 // Initializing variables
-	var puzzles = ["PROPERTIES", "COMPUTER", "EXPLOSION", "CHAIRMAN","UNIVERSITY","STATISTICS","BEHAVIORAL","DICTIONARY","AMPLIFIER","LIBRARIAN","PROGRAMMER","HOSPITAL"];
+	var puzzles = ["PROPERTIES", "COMPUTER", "EXPLOSION", "CHAIRMAN","UNIVERSITY","STATISTICS","BEHAVIORAL","DICTIONARY","AMPLIFIER","LIBRARIAN","PROGRAMMER","HOSPITAL","HEADPHONES","ADVENTURE","SUPERVISOR","SPECIALIST","WORDSNAP","JAVASCRIPT","GALACTIC","SUPERNOVA","CELESTIAL"];
 	var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
 	var randPuzzleNum = Math.floor(Math.random() * (puzzles.length));
