@@ -283,6 +283,7 @@ gameStart();
 
 // Ends the current game, colors unused tiles red, calculates and displays the score information
 	function scoreAnswer() {
+		document.getElementById("instructions").style.visibility = "hidden";
 		document.getElementById("submit").disabled = true;
 		document.getElementById("scoreResults").style.visibility = "visible";
 		//document.getElementById("letterStart").style.visibility = "hidden";
@@ -347,6 +348,7 @@ gameStart();
 
 // Ends the current game and starts a new game with a Random puzzle chosen from puzzles.
 function randomPuzzle() {
+	document.getElementById("instructions").style.visibility = "visible";
 	document.getElementById("submit").disabled = false;
 	document.getElementById("scoreResults").style.visibility = "hidden";
 	for (let i = 0; i < puzzle.length; i++) {
