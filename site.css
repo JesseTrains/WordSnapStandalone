@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.content {
+    max-width: 960px;
+    margin: auto;
+}
+
+.draggable {
+    width: 70px;
+    height: 70px;
+    /*padding: 5px;*/
+    float: left;
+    /*margin: -1px -1px -1px -1px;*/
+    font-size: 2em;
+    background-color: white;
+    border: 1px solid #000000;
+}
+
+.ui-widget-header p, .ui-widget-content p {
+    margin: 0;
+}
+
+#snaptarget {
+    height: 740px;
+    width: 770px;
+    /*margin: 0 10px 10px 0;*/
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centerH {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+}
