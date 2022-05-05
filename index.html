@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordSnap</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="site.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
+  <script>
+  </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-fixed-top"><a class="navbar-brand text-light"> &nbsp;&emsp;WordSnap </a></nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-2">
+			<div style="text-align:left">
+				<p id="puzzleName"></p>
+			</div>
+		</div>
+		<div class="col-4">
+
+		</div>
+		<div class="col-2">
+			<div style="text-align:left">
+				<button class="btn btn-outline-primary" id="random" onclick="randomPuzzle()">Random</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<br>
+<div class="container">
+ <canvas id="snaptarget" class="ui-widget-header bg-opacity-25 bg-secondary" style="border:1px solid black;" width="770" height="770"></canvas> 
+</div>
+
+<br>
+<div class="container" id="letterStart" style="text-align:center">
+</div>
+
+<br><br><br>
+<div class="container" style="margin: 10px 0;">
+	<button class="btn btn-primary" id="submit" onclick="scoreAnswer()">Score</button>
+</div>
+
+<div id="scoreResults" style="visibility:hidden;">
+	<p id="scoreBase"></p>
+	<p id="scoreNumWords"></p>
+	<p id="scoreLettersUsed"></p>
+	<p id="scoreBlue"></p>
+	<p id="scoreTotal"></p>
+</div>
+        </main>
+    </div>
+
+    <script src="words2.js"></script>
+    <script src="rarityScore2.js"></script>
+    <script src="site.js"></script>
+
+</body>
+</html>
