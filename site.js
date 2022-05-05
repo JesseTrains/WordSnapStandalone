@@ -120,6 +120,7 @@ function gameStart() {
 	});
 	document.getElementById("snaptarget").style.width = (tw * (puzzle.length + 1)-30) + "px";
 	document.getElementById("snaptarget").style.height = (tw * (puzzle.length + 1) - 30) + "px";
+	document.getElementById("puzzleSelect").innerHTML = "";
 	var selectPuzzle = document.getElementById('puzzleSelect');
 	selectPuzzle.add(new Option(puzzle));
 	for (let i = 0; i < puzzles.length; i++) {
