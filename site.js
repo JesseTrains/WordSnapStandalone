@@ -122,7 +122,7 @@ function gameStart() {
 	document.getElementById("snaptarget").style.height = (tw * (puzzle.length + 1) - 30) + "px";
 	var selectPuzzle = document.getElementById('puzzleSelect');
 	selectPuzzle.add(new Option(puzzle));
-	for (let i = 0; i < puzzle.length; i++) {
+	for (let i = 0; i < puzzles.length; i++) {
 		if (puzzles[i] !== puzzle) {
 			selectPuzzle.add(new Option(puzzles[i]));
         	}
